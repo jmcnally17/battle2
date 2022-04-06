@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-require 'sinatra'
-require 'rspec'
+gem 'sinatra'
+gem 'rspec'
+gem 'capybara'
+gem 'sinatra-contrib'
