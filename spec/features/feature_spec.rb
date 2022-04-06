@@ -1,8 +1,11 @@
 require_relative '../../app'
 
-feature "testing infrastructure" do
-  scenario "can run app and check page content" do
-    visit '/'
-    expect(page).to have_content "Testing infrastructure working!"
+feature 'enter names' do
+  scenario 'submitting names' do
+    visit('/')
+    fill_in :player_1_name, with: 'Joe'
+    fill_in :player_2_name, with: 'Mon'
+    click_button 'Submit'
+    expect(page).to have_content 'Joe vs. Mon'
   end
 end
