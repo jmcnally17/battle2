@@ -8,4 +8,4 @@ feature 'view opponents hit points' do
       click_button 'Submit'
       expect(page).to have_content 'Mon: 70HP'
     end
-  end
+end
